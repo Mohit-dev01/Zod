@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { fromZodError } from "zod-validation-error";
+// import { fromZodError } from "zod-validation-error";
 import "./App.css";
 
 function App() {
@@ -25,10 +25,10 @@ function App() {
     coords: [1, 2, 3, "jskkj", "jljslkj"],
     id: 89,
   };
-  const results = console.log(userscHema.safeParse(user));
-  if(!results.success){
-    console.log(fromZodError(results.error))
-  }
+  // const results = console.log(userscHema.safeParse(user));
+  // if(!results.success){
+  //   console.log(fromZodError(results.error))
+  // }
   return <></>;
 }
 
